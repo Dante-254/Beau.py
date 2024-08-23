@@ -9,13 +9,18 @@ result = map(lambda a : a*2, numbers)
 
 print(list(result))
 
-
-expences = [1, 2, 3, 4]
-
-list_tuples = [
+list_tuples = [1, 2, 3, 4]
+expenses = [
     ('Dave', 20),
     ('Rob', 30)
 ]
+sum=0
+for expense in expenses:
+    print(expense)
+    print(expense[1])
+    sum += expense[1]
+    print(sum)
 
-print(expences[1])
+print(expenses[1])
 print(list_tuples[1])
+print(sum)
