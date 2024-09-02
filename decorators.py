@@ -3,16 +3,16 @@ def logtime(func):
         print('Its either you time manage,')
         val = func()
         print ('Or time will manage you.')
-        return val, ''
-    print(wrapper())
+        return val
     return wrapper
+
 
 @logtime
 def hello():
     print('You hear me bwana Dante,')
 
 hello()
-print(logtime(1))
+
 
 
 
